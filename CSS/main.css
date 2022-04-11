@@ -1,0 +1,252 @@
+* {
+    margin:             0;
+    padding:            0;
+    box-sizing:         border-box;
+    }
+
+.bg {
+    height:             100vh;
+    background:         linear-gradient(#b34e4b, #471f1e);
+    }
+
+.row {
+    max-width:          700px;
+    width:              80%;
+    min-width:          650px;
+    height:             550px;
+    margin:             auto;
+    padding-top:        130px;
+    }
+
+
+.playground {
+    width:              100%;
+    height:             100%;
+    position:           relative;
+    border:             3px solid #000;
+    background:         #d1ccb4;
+    }
+
+    .instruction {
+        max-width:          700px;
+        width:              80%;
+        min-width:          650px;
+        height:             420px;
+        position:           absolute;
+        margin:             auto;
+        border:             3px solid #000;
+        background:         #d1ccb4;
+        z-index:            1000;
+        display:            none;
+        }
+
+        .instruction h1 {
+            padding-top:        60px;
+            text-align:         center;
+            }
+
+        .instruction p {
+            padding:            40px;
+            text-align:         justify;
+            }
+
+        .info {
+            width:              40px;
+            height:             30px;
+            position:           absolute;
+            top:                -40px;
+            right:              0;
+            font-weight:        bold;
+            border:             3px solid #000;
+            background:         #d1ccb4;
+            }
+
+            .info:hover {
+                background:         #737163;
+                }
+
+    #header {
+        width:              300px;
+        height:             50px;
+        position:           absolute;
+        top:                -70px;
+        left:               50%;
+        transform:          translateX(-50%);
+        padding:            5px;
+        text-align:         center;
+        border:             3px solid #000;
+        background:         #d1ccb4;
+    }
+
+    .totalScore,
+    .power0, .hp0,
+    .power1, .hp1 {
+        margin:             20px;
+        }
+
+        .power0, .hp0,
+        .totalScore0 {
+            float:              left;
+            }
+
+            .power0, .hp0,
+            .totalScore0 .score {
+                background:   linear-gradient(#00d536, #005500);
+                }
+
+        .power1, .hp1,
+        .totalScore1 {
+            float:              right;
+            }
+
+            .power1, .hp1,
+            .totalScore1 .score {
+                background:   linear-gradient(#8adde5, #003f50);
+                }
+
+        .score, .numbers,
+        .menu, .menu p,
+        .power0, .hp0,
+        .power1, .hp1,
+        .img, .header {
+            border:             1px solid #000;
+            box-shadow:         5px 5px 10px #000;
+            }
+
+        .score {
+            text-align:         center;
+            margin-top:         10px;
+            padding-top:        10px;
+            padding-bottom:     10px;
+            }
+
+            .score p {
+                font-size:          20px;
+                font-weight:        bold;
+                }
+
+        .img {
+            width:              150px;
+            height:             250px;
+            padding:            10px;
+            background:         linear-gradient(#999581, #ccba19);
+            }
+
+            img {
+                width:              100%;
+                height:             100%;
+                }
+
+
+        .power0, .hp0,
+        .power1, .hp1 {
+            margin-left:        0;
+            margin-right:       0;
+            text-align:         center;
+            vertical-align:     middle;
+            font-weight:        bold;
+            width:              50px;
+            height:             50px;
+            }
+
+            .power0, .hp0 {
+                margin-right:        10px;
+                }
+
+            .power1, .hp1 {
+                margin-left:        10px;
+                }
+
+            .power0 p, .hp0 p,
+            .power1 p, .hp1 p {
+                position:           relative;
+                top:                30%;
+                transform:          translateY(-50%);
+                }
+
+        .menu, .log,
+        .numbers {
+            width:              150px;
+            position:           absolute;
+            text-align:         center;
+            background:         linear-gradient(#b34e4b, #471f1e);
+            }
+
+        .menu {
+            height:             auto;
+            left:               50%;
+            bottom:             -10%;
+            transform:          translateX(-50%);
+            }
+
+            .menu p {
+                margin:             10px 5px;
+                padding:            5px 10px;
+                background:         #d1ccb4;
+                font-weight:        bold;
+                }
+
+        .numbers {
+            height:             150px;
+            bottom:             45%;
+            left:               50%;
+            transform:          translate(-50%, 50%);
+            }
+
+            .numbers h1 {
+                position:           absolute;
+                left:               50%;
+                bottom:             50%;
+                transform:          translate(-50%, 50%);
+                font-size:          100px;
+                color:              white;
+                text-shadow:        7.5px 7.5px 5px black;
+                }
+
+        .log {
+            width:              320px;
+            height:             60px;
+            position:           absolute;
+            top:                85px;
+            left:               50%;
+            transform:          translateX(-50%);
+            background:         transparent;
+            color:              #000;
+            }
+
+            .log p {
+                width:              100%;
+                font-size:          20px;
+                padding-top:        10px;
+                position:           absolute;
+                top:                50%;
+                left:               50%;
+                transform:          translate(-50%, -50%);   
+                }
+
+
+
+
+    /* Buttons hover */
+
+                .new:hover {
+                    background-color:       orange;
+                    }
+
+                .atk:hover {
+                    background-color:       red;
+                    color:                  white;
+                    }
+
+                .char:hover {
+                    background-color:       blue;
+                    color:                  white;
+                    }
+
+
+    /* Active player */
+
+        .active {
+            color: #fff;
+            text-shadow:        7.5px 7.5px 5px black;
+            }

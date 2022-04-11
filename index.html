@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test js</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+
+
+<div class="bg">
+    <div class='row'>
+
+        <div class="instruction">
+            <h1>Instruction & Rules</h1>
+            <p>
+                1. Charge is for increasing your power. With highter power you can cause highter damage. But be carefull, cube can roll numbers from 1 to 7. If you roll number 1, charging will fail and cause full damage to you! On the other side, if you roll number 7, you will use heal for 7 HP!
+
+                <br><br>
+
+                2. Attack is for dealing damage to your opponent. Your attack is equal your charged power!
+
+                <br><br>
+
+                3. If your HP will drop on 0, you are dead and your opponent is winner!
+
+                <br><br>
+
+                4. New game button is for reseting actual game.
+
+            </p>    
+        </div>
+
+    <div class="playground">
+        <button class="info">Info</button>
+       
+        <div id="header">
+            <h1>RPG Duel box v0.2</h1>
+        </div>
+       
+        <div class="totalScore totalScore0 active">
+
+            <div class='img'>
+                <img src="game/player_1.jpg">
+            </div>
+
+            <div class="score">
+                <p>Score</p>
+                <p id='name-0'></p>
+                <br>
+                <h1 id='totalScorePlayer-0'></h1>
+            </div>
+
+        </div>
+
+        <div class="hp0">
+            <p>HP</p>
+            <p id="hp0"></p>
+        </div>
+       
+        <div class="power0">
+            <p>Power</p>
+            <p id="power0"></p>
+        </div>
+       
+       
+        <div class="totalScore totalScore1">
+
+            <div class='img'>
+                <img src="game/player_2.jpg">
+            </div>
+
+            <div class="score">
+                <p>Score</p>
+                <p id='name-1'></p>
+                <br>
+                <h1 id='totalScorePlayer-1'></h1>
+            </div>
+
+        </div>
+       
+        <div class="hp1">
+            <p>HP</p>
+            <p id="hp1"></p>
+        </div>
+
+        <div class="power1">
+            <p>Power</p>
+            <p id="power1">Power</p>
+        </div>
+       
+       
+
+            <div class="menu">
+                <p class='char btn'>Charge</p>
+                <p class='atk btn'>Attack</p>
+                <p class='new btn'>New game</p>
+            </div>
+
+
+            <div class="numbers">
+                <h1 id='numbers'>1</h1>
+            </div>
+
+
+            <div class="log">
+                <p id='log'>test</p>
+            </div>
+
+
+       </div>
+
+   </div>
+</div>
+
+
+
+
+</body>
+<script src="JS/script.js"></script>
+</html>
